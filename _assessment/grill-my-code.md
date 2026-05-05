@@ -1,7 +1,7 @@
 ## Grill My Code
 
-> **Generated:** 2026-05-05 13:34:26 UTC
-> **Commits reviewed:** `8aca742` → `122d414`
+> **Generated:** 2026-05-05 13:59:35 UTC
+> **Commits reviewed:** `8aca742` → `40aa304`
 
 > **Files assessed:** `countdown.py`
 
@@ -15,85 +15,54 @@ _These questions check your knowledge of what specific parts of your code do._
    ```
    for i in range(10, -1, -1):
    ```
-   What values does `i` take during each iteration of this loop?
-
-   **It takes the values 10 - 0. Exits loop on -1.**
-
+   What values does the variable `i` take during each iteration of the loop in `countdown.py`?
 2. **`countdown.py`**
    ```
    print(i)
    ```
-   What does the `print(i)` statement output on the first iteration?
-
-   **It outputs 10.**
-
+   What does the `print(i)` statement output during the first iteration of the loop?
 3. **`countdown.py`**
    ```
    print(i)
    ```
-   What does `print(i)` output on the last iteration of the loop?
-
-   **It outputs 0.**
-
+   What does the `print(i)` statement output during the last iteration of the loop?
 4. **`countdown.py`**
-   ```
-   range(10, -1, -1)
-   ```
-   How many times does the `for` loop execute?
-
-   **11 times.**
-
-
-
-5. **`countdown.py`**
    ```
    print("Blast Off!!")
    ```
-   What is printed immediately after the loop finishes?
-
-   **Blast Off!!**
-
+   What is printed by the final `print("Blast Off!!")` statement after the loop?
+5. **`countdown.py`**
+   ```
+   for i in range(10, -1, -1):
+   ```
+   How many times does the loop execute in `countdown.py`?
 6. **`countdown.py`**
    ```
    for i in range(10, -1, -1):
+       print(i)
    ```
-   What is the purpose of the third parameter `-1` in the `range` function?
-
-   **That is the step or increment/decrement of i on each loop iteration.**
-
+   What is the sequence of numbers output by the loop in `countdown.py`?
 7. **`countdown.py`**
    ```
-   print(i)
+   range(10, -1, -1)
    ```
-   Is `i` printed as a string or an integer in each iteration?
-
-   **Just printed as an integer.**
-
+   What is the purpose of the `-1` step argument in the `range` function?
 8. **`countdown.py`**
    ```
-   for i in range(10, -1, -1):
+   print(i)
    ```
-   Does the loop variable `i` ever become negative during execution?
-
-   **Yes it becomes negative, but that ends the loop.**
-
+   Which line is responsible for printing each countdown number?
 9. **`countdown.py`**
    ```
-   print(i)
    print("Blast Off!!")
    ```
-   How many total lines are printed by the script?
-
-   **2 lines**
-
+   Is `"Blast Off!!"` printed before or after the loop finishes?
 10. **`countdown.py`**
     ```
     for i in range(10, -1, -1):
         print(i)
     ```
-    What is the lowest value printed by the loop?
-
-    **0**
+    What type of loop is used in the code to iterate through the countdown numbers?
 
 ## Comprehension
 
@@ -103,361 +72,240 @@ _These questions ask you to explain why or how particular choices in your code w
     ```
     range(10, -1, -1)
     ```
-    Why does specifying `-1` as the end value in `range` ensure that `0` is included in the countdown?
-
-    **Because the loop terminates at the end value and does not run again.**
-
+    Why did you choose `range(10, -1, -1)` for the countdown instead of `range(10, 0, -1)`?
 12. **`countdown.py`**
     ```
     for i in range(10, -1, -1):
         print(i)
     ```
-    Why does the loop count down from 10 rather than up?
-
-    **The start value is 10 with a negative step**
-
+    How does the loop structure ensure that the countdown reaches zero?
 13. **`countdown.py`**
     ```
     print("Blast Off!!")
     ```
-    Why did you place `print("Blast Off!!")` after the loop instead of inside it?
-
-    **Want it to print after the countdown loop is done**
-
+    Why is the `print("Blast Off!!")` statement placed outside the loop?
 14. **`countdown.py`**
     ```
     for i in range(10, -1, -1):
     ```
-    How does the value of `i` change on each iteration?
-
-    **Goes down by 1**
-
+    Why does the loop start at `10` instead of another value?
 15. **`countdown.py`**
     ```
     for i in range(10, -1, -1):
-        print(i)
     ```
-    Why does the loop terminate when `i` equals `-1`?
-
-    **It Python range, the end is not inclusive**
-
+    How does the third argument in the `range` function affect the loop’s behavior?
 16. **`countdown.py`**
-    ```
-    for i in range(10, -1, -1):
-        print(i)
-    ```
-    What would happen if the range step was positive instead of negative?
-
-    **The loop would only run once for 10 value**
-
-17. **`countdown.py`**
     ```
     print("Blast Off!!")
     ```
-    Why is "Blast Off!!" not part of the countdown numbers?
-
-    **Want it to print after the countdown loop is done**
-
+    Why did you use double exclamation marks in the string `"Blast Off!!"`?
+17. **`countdown.py`**
+    ```
+    print(i)
+    ```
+    How does the `print(i)` statement relate to the countdown sequence?
 18. **`countdown.py`**
+    ```
+    for i in range(10, -1, -1):
+        print(i)
+    print("Blast Off!!")
+    ```
+    How does the code guarantee that `"Blast Off!!"` will always be printed after the countdown?
+19. **`countdown.py`**
     ```
     for i in range(10, -1, -1):
         print(i)
     ```
     Why did you use a `for` loop instead of a `while` loop for the countdown?
-
-    **for loop better for fixed/known number of iterations**
-
-19. **`countdown.py`**
-    ```
-    range(10, -1, -1)
-    ```
-    Why does the `range` function include `0` but exclude `-1`?
-
-    **Am tired of answering your questions**
-
 20. **`countdown.py`**
     ```
     print(i)
-    print("Blast Off!!")
     ```
-    Why is there no pause or delay between printing the numbers and "Blast Off!!"?
-
-    **Am tired of answering your questions**
+    What is the significance of printing each value of `i` individually rather than constructing a single string for the countdown?
 
 ## Analysis
 
-_These questions require tracing execution, reasoning about logic, or identifying issues._
+_These questions ask you to trace execution, reason about logic, or identify issues in your code._
 
 21. **`countdown.py`**
     ```
     for i in range(10, -1, -1):
         print(i)
     ```
-    What would be printed if the loop was changed to `for i in range(10, 0, -1)`?
-
-    **Am tired of answering your questions**
-
+    If the starting value in `range` was changed from `10` to `5`, what sequence would be printed by the loop?
 22. **`countdown.py`**
     ```
-    for i in range(10, -1, -1):
-        print(i)
+    range(10, -1, -1)
     ```
-    What output would result if the step in `range` was changed to `-2`?
-
-    **Am tired of answering your questions**
-
+    What would happen if the step argument in `range` was set to `1` instead of `-1`?
 23. **`countdown.py`**
     ```
     for i in range(10, -1, -1):
         print(i)
     ```
-    If you reversed the order of `print(i)` and `print("Blast Off!!")`, how would the output change?
-
-    **Am tired of answering your questions**
-
+    If you moved the `print("Blast Off!!")` statement inside the loop, how would the output change?
 24. **`countdown.py`**
     ```
     for i in range(10, -1, -1):
         print(i)
     ```
-    If the loop started at `5` instead of `10`, what would be printed?
-
-    **Am tired of answering your questions**
-
+    What would happen if the stop value in `range` was set to `-2` instead of `-1`?
 25. **`countdown.py`**
+    ```
+    print(i)
+    ```
+    If you accidentally used `print("i")` instead of `print(i)`, what would be printed during each loop iteration?
+26. **`countdown.py`**
     ```
     for i in range(10, -1, -1):
         print(i)
     ```
-    If the end value of `range` was `-2`, how would that affect the output?
-
-    **Am tired of answering your questions**
-
-26. **`countdown.py`**
+    If you changed the loop to `for i in range(10):`, what would the output be?
+27. **`countdown.py`**
     ```
     print("Blast Off!!")
     ```
-    If `print("Blast Off!!")` was placed inside the loop after `print(i)`, how many times would "Blast Off!!" be printed?
-
-    **Am tired of answering your questions**
-
-27. **`countdown.py`**
-    ```
-    for i in range(10, -1, -1):
-        print(i)
-    ```
-    If `range(10, -1, -1)` was replaced by `range(10, 0, -1)`, would `0` be printed?
-
-    **Am tired of answering your questions**
-
+    If there was an error before the loop finished, would `"Blast Off!!"` still be printed?
 28. **`countdown.py`**
     ```
     for i in range(10, -1, -1):
         print(i)
+    print("Blast Off!!")
     ```
-    If the step was omitted in the range function, what would happen?
-
-    **Am tired of answering your questions**
-
+    If you added another print statement after `"Blast Off!!"`, how would it affect the flow of output?
 29. **`countdown.py`**
     ```
-    print(i)
+    for i in range(10, -1, -1):
+        print(i)
     ```
-    If `print(i)` was replaced by `print(str(i) + "!")`, what would the output look like?
-
-    **Am tired of answering your questions**
-
+    If you omitted the `-1` step in `range`, would the loop still count down?
 30. **`countdown.py`**
     ```
     for i in range(10, -1, -1):
         print(i)
-    print("Blast Off!!")
     ```
-    If the script was run twice in succession, what would the combined output be?
-
-    **Am tired of answering your questions**
-
-31. **`countdown.py`**
-    ```
-    for i in range(10, -1, -1):
-        print(i)
-    ```
-    If the step was set to `0`, what would happen when running the script?
-
-    **Am tired of answering your questions**
-
-32. **`countdown.py`**
-    ```
-    for i in range(10, -1, -1):
-        print(i)
-    ```
-    If the starting value was higher than the ending value, but the step was positive, what would the output be?
-
-    **Am tired of answering your questions**
-
-33. **`countdown.py`**
-    ```
-    print(i)
-    print("Blast Off!!")
-    ```
-    If you added a blank line between the loop and the final print, how would the output change?
-
-    **Am tired of answering your questions**
-
-34. **`countdown.py`**
-    ```
-    for i in range(10, -1, -1):
-        print(i)
-    ```
-    If you added `print("T-minus " + str(i))` before `print(i)`, what would the output sequence be?
-
-    **Am tired of answering your questions**
-
-35. **`countdown.py`**
-    ```
-    for i in range(10, -1, -1):
-        print(i)
-    ```
-    If you changed the loop to `for i in range(10, -1, -2)`, what would be the first and last numbers printed?
-
-    **Am tired of answering your questions**
-
-36. **`countdown.py`**
-    ```
-    for i in range(10, -1, -1):
-        print(i)
-    ```
-    If you set the step to `-3`, how many times would the loop execute?
-
-    **Am tired of answering your questions**
-
-37. **`countdown.py`**
-    ```
-    for i in range(10, -1, -1):
-        print(i)
-    ```
-    If you swapped the start and end values in the range function, what would the output be?
-
-    **Am tired of answering your questions**
-
-38. **`countdown.py`**
-    ```
-    print("Blast Off!!")
-    ```
-    If you removed this line, how would the output of the script change?
-
-    **Am tired of answering your questions**
-
-39. **`countdown.py`**
-    ```
-    for i in range(10, -1, -1):
-        print(i)
-    ```
-    What happens if you use a floating point number as the step in the range function?
-
-    **Am tired of answering your questions**
-
-40. **`countdown.py`**
-    ```
-    for i in range(10, -1, -1):
-        print(i)
-    ```
-    If you changed the loop to `for i in range(0, 11)`, how would the output differ?
-
-    **Am tired of answering your questions**
+    If you reversed the order of the loop to `for i in range(-1, 10, 1):`, what would the output be?
 
 ## Evaluation
 
 _These questions ask you to judge design decisions, tradeoffs, or rationale in your code._
 
-41. **`countdown.py`**
+31. **`countdown.py`**
     ```
     for i in range(10, -1, -1):
-        print(i)
     ```
-    Why did you decide to count down from 10, and not another number, in your implementation?
-
-    **Am tired of answering your questions**
-
-42. **`countdown.py`**
-    ```
-    for i in range(10, -1, -1):
-        print(i)
-    ```
-    What are the advantages of using a `for` loop with `range()` for this countdown, compared to recursion?
-
-    **Am tired of answering your questions**
-
-43. **`countdown.py`**
+    Why did you decide to use a descending `range` for the countdown instead of another approach, such as recursion?
+32. **`countdown.py`**
     ```
     print("Blast Off!!")
     ```
-    Why did you choose to print "Blast Off!!" exactly after the countdown finishes, rather than before or during?
+    What are the advantages of placing the celebratory message after the loop rather than before or during?
+33. **`countdown.py`**
+    ```
+    for i in range(10, -1, -1):
+        print(i)
+    ```
+    Why did you choose to print each number individually, rather than formatting the output as a single countdown string?
+34. **`countdown.py`**
+    ```
+    for i in range(10, -1, -1):
+    ```
+    How does the choice of starting and stopping values in `range` affect the clarity and readability of your code?
+35. **`countdown.py`**
+    ```
+    print("Blast Off!!")
+    ```
+    What is the impact of using a static message for `"Blast Off!!"` on the user’s understanding of the program’s purpose?
+36. **`countdown.py`**
+    ```
+    for i in range(10, -1, -1):
+    ```
+    Why might you choose to use a hardcoded countdown value rather than making it configurable?
+37. **`countdown.py`**
+    ```
+    for i in range(10, -1, -1):
+        print(i)
+    ```
+    What are the potential tradeoffs of using a simple loop for countdown functionality compared to a more complex approach?
+38. **`countdown.py`**
+    ```
+    for i in range(10, -1, -1):
+        print(i)
+    ```
+    How would the code’s design change if you wanted to support different countdown ranges, such as 20 to 0?
+39. **`countdown.py`**
+    ```
+    print("Blast Off!!")
+    ```
+    How does the placement of `"Blast Off!!"` affect the program’s logical flow and output readability?
+40. **`countdown.py`**
+    ```
+    for i in range(10, -1, -1):
+        print(i)
+    ```
+    What are the advantages and disadvantages of using a `for` loop with the `range` function for countdowns?
 
-    **Am tired of answering your questions**
+---
 
+## Broader Questions
+
+_These questions explore underlying concepts, patterns, or technologies that are evident in the code._
+
+41. **`countdown.py`**
+    ```
+    for i in range(10, -1, -1):
+    ```
+    How does the `range` function differ from other sequence-generating functions in Python, such as `enumerate` or `zip`?
+42. **`countdown.py`**
+    ```
+    print(i)
+    ```
+    What are the implications of using `print` in a loop for performance if the countdown range were very large?
+43. **`countdown.py`**
+    ```
+    for i in range(10, -1, -1):
+    ```
+    What would be the effect of using a generator expression instead of a `for` loop for the countdown?
 44. **`countdown.py`**
     ```
     for i in range(10, -1, -1):
         print(i)
     ```
-    What are the potential limitations of using `range(10, -1, -1)` for countdowns with different start and end points?
-
-    **Am tired of answering your questions**
-
+    How would you modify the code to include a delay between each countdown number, and why might that be beneficial?
 45. **`countdown.py`**
     ```
-    for i in range(10, -1, -1):
-        print(i)
+    print("Blast Off!!")
     ```
-    Why might you prefer the current approach over using a list comprehension or generator for producing the countdown sequence?
-
-    **Am tired of answering your questions**
-
+    What are the benefits and drawbacks of using a fixed message versus a dynamically generated one at the end of a countdown?
 46. **`countdown.py`**
     ```
     for i in range(10, -1, -1):
         print(i)
     ```
-    What are the tradeoffs between using a single loop versus multiple nested loops for more complex countdowns?
-
-    **Am tired of answering your questions**
-
+    In what scenarios might a countdown approach like this be used in real-world applications?
 47. **`countdown.py`**
     ```
-    print(i)
-    print("Blast Off!!")
+    for i in range(10, -1, -1):
+        print(i)
     ```
-    Why did you opt for a sequential print approach rather than formatting the output all in one line?
-
-    **Am tired of answering your questions**
-
+    How does the loop in your code relate to the concept of iteration in programming?
 48. **`countdown.py`**
     ```
     for i in range(10, -1, -1):
-        print(i)
     ```
-    What are the implications for scalability if you wanted to count down from much larger numbers?
-
-    **Am tired of answering your questions**
-
+    Why is the `for` loop syntax preferred over manual index manipulation in Python for this type of task?
 49. **`countdown.py`**
     ```
-    for i in range(10, -1, -1):
-        print(i)
+    print(i)
     ```
-    Why did you choose not to include any error handling for the range arguments?
-
-    **Am tired of answering your questions**
-
+    How would the output differ if you used a logging library instead of `print` for displaying the countdown?
 50. **`countdown.py`**
     ```
     for i in range(10, -1, -1):
         print(i)
+    print("Blast Off!!")
     ```
-    How would your design change if you wanted to support both counting up and counting down in the same script?
-
-    **Am tired of answering your questions**
+    What considerations would you have if you wanted to localize the countdown and "Blast Off!!" message for different languages?
 
 ---
 
