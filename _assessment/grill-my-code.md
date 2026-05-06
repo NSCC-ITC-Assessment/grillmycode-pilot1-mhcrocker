@@ -1,7 +1,7 @@
 ## Grill My Code
 
-> **Generated:** 2026-05-06 01:06:10 UTC
-> **Commits reviewed:** `8aca742` → `8c9f9dc`
+> **Generated:** 2026-05-06 01:17:42 UTC
+> **Commits reviewed:** `8aca742` → `4ff65ea`
 
 > **Files assessed:** `countdown.py`
 
@@ -15,313 +15,331 @@ _These questions check your knowledge of what specific parts of your code do._
    ```
    i = 10
    ```
-   What value does the variable `i` start with in this code?
+   What value does the variable `i` start with before the `while` loop begins?
 
 2. **`countdown.py`**
    ```
    while i >= 0:
    ```
-   How many times does the `while` loop execute before stopping?
+   What condition must be true for the `while` loop to execute?
 
 3. **`countdown.py`**
    ```
    print(i)
    ```
-   What does the code output immediately after the first iteration of the loop?
+   What is printed during each iteration of the loop?
 
 4. **`countdown.py`**
    ```
    i -= 1
    ```
-   By how much is `i` changed in each iteration of the loop?
+   How is the value of `i` changed after each loop iteration?
 
 5. **`countdown.py`**
    ```
    print("Blast Off!!")
    ```
-   What is printed after the loop finishes executing?
+   What does the program output after the loop finishes?
 
 6. **`countdown.py`**
    ```
    while i >= 0:
    ```
-   What condition must be true for the loop to continue?
+   When does the `while` loop stop executing?
 
 7. **`countdown.py`**
    ```
-   print(i)
+   i -= 1
    ```
-   What is the last value of `i` that is printed before "Blast Off!!" is shown?
+   By how much does `i` decrease each time the loop runs?
 
 8. **`countdown.py`**
    ```
-   i -= 1
+   print(i)
    ```
-   What is the value of `i` immediately after the loop exits?
+   What is the first value printed by this statement?
 
 9. **`countdown.py`**
    ```
-   print(i)
+   i = 10
    ```
-   Does the code ever print a negative value for `i`?
+   If `i` is set to `10`, how many times will the loop run?
 
 10. **`countdown.py`**
     ```
     print("Blast Off!!")
     ```
-    How many times is the string "Blast Off!!" printed in this program?
-
-## Comprehension
-
-_These questions ask you to explain why or how particular choices in your code work the way they do._
+    What message is printed after the countdown ends?
 
 11. **`countdown.py`**
     ```
-    i = 10
+    while i >= 0:
     ```
-    Why did you choose to initialize `i` with the value `10` instead of another number?
+    What is the last value of `i` that causes the loop to execute?
 
 12. **`countdown.py`**
     ```
-    while i >= 0:
+    i -= 1
     ```
-    Why does the loop include `0` in its countdown by using `i >= 0` rather than `i > 0`?
+    What will be the value of `i` immediately after the loop terminates?
 
 13. **`countdown.py`**
     ```
     print(i)
     ```
-    How does placing `print(i)` inside the loop affect the output sequence?
+    Is the value `0` printed by the loop?
+
+## Comprehension
+
+_These questions ask you to explain why or how particular choices in your code work the way they do._
 
 14. **`countdown.py`**
     ```
-    i -= 1
+    while i >= 0:
     ```
-    Why is `i` decremented after printing, rather than before?
+    Why did you choose `i >= 0` as the loop condition instead of `i > 0`?
 
 15. **`countdown.py`**
     ```
-    print("Blast Off!!")
+    i -= 1
     ```
-    How does the placement of `print("Blast Off!!")` outside the loop influence the program's flow?
+    Why is it necessary to decrement `i` inside the loop?
 
 16. **`countdown.py`**
     ```
-    while i >= 0:
+    print(i)
     ```
-    Why did you use a `while` loop instead of a `for` loop for this countdown?
+    Why does `print(i)` appear before `i -= 1` in the loop?
 
 17. **`countdown.py`**
     ```
-    i -= 1
+    print("Blast Off!!")
     ```
-    How does this statement ensure that the loop eventually terminates?
+    Why did you place `print("Blast Off!!")` outside the loop rather than inside it?
 
 18. **`countdown.py`**
     ```
-    print(i)
+    i = 10
     ```
-    Why does the code print each value of `i` instead of storing them?
+    Why did you initialize `i` to `10`?
 
 19. **`countdown.py`**
     ```
-    print("Blast Off!!")
+    while i >= 0:
     ```
-    Why did you choose this particular phrase to signal the end of the countdown?
+    How does the loop condition ensure the countdown includes zero?
 
 20. **`countdown.py`**
     ```
-    while i >= 0:
+    i -= 1
     ```
-    How does the loop condition relate to the purpose of simulating a countdown?
-
-## Analysis
-
-_These questions require you to trace execution, reason about logic, or identify issues in the code._
+    Why is `i -= 1` used instead of another decrementing statement?
 
 21. **`countdown.py`**
     ```
-    i = 10
+    print("Blast Off!!")
     ```
-    What would happen to the output sequence if `i` were initialized to `5` instead of `10`?
+    How does this statement relate to the preceding loop?
 
 22. **`countdown.py`**
     ```
-    while i >= 0:
+    i = 10
     ```
-    If the condition were changed to `i > 0`, what values would be printed?
+    How would the output change if `i` were initialized to `5` instead?
 
 23. **`countdown.py`**
     ```
-    print(i)
+    while i >= 0:
     ```
-    If `print(i)` were placed after `i -= 1` inside the loop, how would the output change?
+    What effect would changing the loop condition to `i > 0` have on the output?
 
 24. **`countdown.py`**
     ```
     i -= 1
     ```
-    What would happen if `i -= 1` were omitted from the loop?
+    How does this statement affect the progress of the loop?
 
 25. **`countdown.py`**
     ```
-    while i >= 0:
+    print("Blast Off!!")
     ```
-    How does the loop ensure that "Blast Off!!" is only printed once?
+    Why does this statement not execute until after the loop finishes?
 
 26. **`countdown.py`**
     ```
-    print("Blast Off!!")
+    print(i)
     ```
-    If `print("Blast Off!!")` were placed inside the loop after `i -= 1`, when would it execute?
+    What would happen if you moved `print(i)` below `i -= 1` in the loop?
+
+## Analysis
+
+_These questions require you to trace execution, reason about logic, or identify issues with the code._
 
 27. **`countdown.py`**
     ```
+    i = 10
     while i >= 0:
+        print(i)
+        i -= 1
     ```
-    What would be the effect if the loop condition was `while i != 0:`?
+    What sequence of numbers is printed by the loop?
 
 28. **`countdown.py`**
     ```
-    i = 10
+    while i >= 0:
     ```
-    If `i` were initialized to `-5`, how would the loop behave?
+    If `i` is initialized to `-1`, does the loop execute at all?
 
 29. **`countdown.py`**
     ```
-    print(i)
+    i = 10
+    while i >= 0:
+        print(i)
+        i -= 1
     ```
-    How would the output change if you used `print("Countdown:", i)` instead of `print(i)`?
+    What would the output be if `i` started at `12`?
 
 30. **`countdown.py`**
     ```
-    i -= 1
+    print("Blast Off!!")
     ```
-    What would happen if `i -= 2` were used instead of `i -= 1`?
+    At what point in execution does this statement run?
 
 31. **`countdown.py`**
     ```
-    print("Blast Off!!")
+    i -= 1
     ```
-    How would the output change if this statement was omitted?
+    What would be the effect if `i -= 1` were accidentally omitted from the loop?
 
 32. **`countdown.py`**
     ```
     while i >= 0:
     ```
-    What would happen if the condition was changed to `while i > -1:`?
+    What happens if the condition is changed to `i == 0`?
 
 33. **`countdown.py`**
     ```
-    print(i)
+    i = 10
+    while i >= 0:
+        print(i)
+        i -= 1
     ```
-    What is the relationship between the sequence of printed numbers and the initial value of `i`?
+    How many total lines are printed by the program, including the loop and the final statement?
 
 34. **`countdown.py`**
     ```
-    i -= 1
+    print(i)
     ```
-    How does the decrement operation relate to the loop's termination?
+    What is printed when `i` is zero?
 
 35. **`countdown.py`**
     ```
+    i = 10
     while i >= 0:
+        print(i)
+        i -= 1
     ```
-    If a bug caused `i` to increase instead of decrease, how would this affect the program?
+    What is the value of `i` after the loop ends?
 
 36. **`countdown.py`**
     ```
     print(i)
     ```
-    If you added a second `print(i)` after `i -= 1` inside the loop, what would be the result?
+    If `print(i)` were changed to `print(i * 2)`, what would the output sequence be?
 
 37. **`countdown.py`**
     ```
-    i -= 1
+    print("Blast Off!!")
     ```
-    If `i -= 1` were replaced by `i += 1`, would the loop ever terminate?
+    If this statement were moved inside the loop, how would the output change?
 
 38. **`countdown.py`**
     ```
     while i >= 0:
     ```
-    How does the choice of comparison operator (`>=`) affect the loop's execution compared to (`>`)?
+    If the loop condition were `i <= 10`, what would happen?
 
 39. **`countdown.py`**
     ```
-    print("Blast Off!!")
+    i = 10
+    while i >= 0:
+        print(i)
+        i -= 1
     ```
-    What is the significance of printing "Blast Off!!" after the loop instead of during?
+    What happens if `i` is initialized as a float, e.g. `i = 10.5`?
 
 40. **`countdown.py`**
     ```
-    i = 10
+    while i >= 0:
     ```
-    What would happen if `i` were set to `0` at the start?
-
-## Evaluation
-
-_These questions ask you to judge design decisions, tradeoffs, or rationale in your code._
+    If the loop condition were `i != 0`, would zero be printed?
 
 41. **`countdown.py`**
     ```
-    i = 10
+    i -= 1
     ```
-    Why did you choose a hard-coded value for the countdown start rather than making it configurable?
+    If `i` were decremented by `2` each time, how many times would the loop run?
 
 42. **`countdown.py`**
     ```
+    i = 10
     while i >= 0:
+        print(i)
+        i -= 1
     ```
-    What is the reasoning behind using a loop that includes `0` in the countdown?
+    If `i` were initialized to `0`, what would the output be?
 
 43. **`countdown.py`**
     ```
     print(i)
     ```
-    Why did you opt to print the number before decrementing rather than after?
+    Could the loop print negative numbers?
+
+## Evaluation
+
+_These questions require you to judge design decisions, tradeoffs, or rationale behind the code._
 
 44. **`countdown.py`**
     ```
-    i -= 1
+    while i >= 0:
     ```
-    What is the rationale for decrementing `i` by `1` instead of another step value?
+    Why did you use a `while` loop instead of a `for` loop for the countdown?
 
 45. **`countdown.py`**
     ```
-    print("Blast Off!!")
+    i = 10
     ```
-    Why is the conclusion of the countdown separated from the loop logic?
+    What considerations might influence your choice of starting value for `i` in a countdown?
 
 46. **`countdown.py`**
     ```
-    while i >= 0:
+    print("Blast Off!!")
     ```
-    What advantages or disadvantages does a `while` loop offer here versus a `for` loop?
+    What is the rationale for having a distinct message after the countdown completes?
 
 47. **`countdown.py`**
     ```
-    print(i)
+    i -= 1
     ```
-    Why did you decide to print only the integer value of `i` rather than adding additional formatting?
+    Why did you use direct subtraction for decrementing `i` rather than a function or another mechanism?
 
 48. **`countdown.py`**
     ```
-    i -= 1
+    print(i)
     ```
-    What are the implications of decrementing the counter directly within the loop?
+    How does printing the value of `i` at each step benefit the user experience of the countdown?
 
 49. **`countdown.py`**
     ```
-    print("Blast Off!!")
+    while i >= 0:
     ```
-    Why did you choose to use a printed message instead of a return value to indicate the countdown's end?
+    What are the advantages and disadvantages of counting down to zero rather than stopping at one?
 
 50. **`countdown.py`**
     ```
-    i = 10
+    print("Blast Off!!")
     ```
-    Why was the loop designed to count down from a fixed value rather than up from zero?
+    What considerations might go into choosing the message or its timing in the context of a countdown program?
 
 ---
 
